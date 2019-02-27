@@ -105,6 +105,7 @@
       <workItem from="1550920308080" duration="50000" />
       <workItem from="1551174604158" duration="1030000" />
       <workItem from="1551175710081" duration="32000" />
+      <workItem from="1551253313173" duration="225000" />
     </task>
     <task id="LOCAL-00001" summary="Проверка PHPStorm">
       <created>1551174784064</created>
@@ -113,11 +114,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551174784064</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Проверка PHPStorm">
+      <created>1551253539040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551253539040</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1112000" />
+    <option name="totallyTimeSpent" value="1354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="1025" extended-state="6" />
