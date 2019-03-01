@@ -3,73 +3,82 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Что нужно знать, чтобы делать сайты</title>
+    <title>Формы</title>
+
+    <style>
+        h1 {
+            color: blue;
+            text-decoration: underline
+        }
+
+        label {
+            color: green;
+        }
+
+        em {
+            font-weight: normal;
+            font-style: italic
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <h1>Что нужно знать, чтобы делать сайты</h1>
 
-    <ol>
-        <li><strong>HTML</strong></li>
+    <h1>Моя первая HTML-форма</h1>
 
-        <li><em>CSS</em></li>
+    <form metod = "post">
+        <label for = "email" class = "email-label"> Email: </label>
+        <input id = "email" name = "email" type = "text" required tabindex="1" placeholder="Введите текст"><br>
 
-        <li>PHP</li>
+        <label for = "password">Пароль: </label>
+        <input id= "password" name = "password" type = "password"><br>
 
-        <li>SQL</li>
+        <input type = "number" min = "2" max = "100" tabindex="2"><br>
 
-        <li>JavaScript</li>
+        <label>
+            <input type="checkbox" value="YES">
+            Подписаться на рассылку
+        </label>
 
-        <li>jQuery</li>
+        <input type = "color"><br>
 
-        <li>Flash</li>
+        <input type = "date"tabindex="3" value="2019-03-01"><br>
 
-        <li>SEO</li>
-    </ol>
+        <input type = "file"><br>
 
-    <h2>PHP и JavaScript</h2>
+        <span class="email-label">Хотите получать подарки:</span>
 
-    <p>
-        Языки программирования <strong>PHP</strong> и <strong>JavaScript</strong> позволяют сделать сайт динамичным,
-        то есть реагирующим на действия пользователя. Например, можно сделать красивую выпадающую менюшку или слайдер
-    </p>
+        <label>
+            <input type = "radio" name = "gift" value="1">да
+        </label>
 
-    <h2>Виды скриптов</h2>
+        <label>
+            <input type = "radio" name = "gift" value="2">нет
+        </label>
 
-    <p>
-        Для этого пишутся скрипты (англ. <em>script</em> - «сценарий») - программы, позволяющие реагировать
-        на действия пользователя. Скрипты бывают двух видов:
+        <label>
+            <input type = "radio" name = "gift" value="3">не знаю
+        </label><br>
 
-        <br>
+        <textarea name="text"></textarea><br>
 
-        <ul>
-            <li>
-                те, которые выполняются на сервере, а результат их выполнения приходит в браузер к пользователю
-                уже в готовом виде. Это скрипты, написанные на языке <strong>PHP</strong>.
-                На нем пишутся <strong>CMS-ки</strong> – системы управления контентом.
-            </li>
+        <select name = "city">
+            <option>Днепр</option>
+            <option selected>Харьков</option>
+            <option>Киев</option>
+        </select>
 
-            <li>
-                те, которые выполняются прямо в браузере пользователя. Это скрипты, написанные на языке
-                <strong>JavaScript</strong>. Они чаще всего используются для того, чтобы сделать страницу более удобной
-                и красивой.
-            </li>
-        </ul>
-    </p>
+        <input type = "submit">
+        <input type="reset">
 
-    <p>
-        <a href="table.html"> Таблицы тут</a>
-    </p>
+        <button><em>italic</em> </button>
 
-    <br>
 
-    <p>
-        <a href="https://github.com/gsinkovskiy/skillup-php-711">https://github.com/gsinkovskiy/skillup-php-711</a>
 
-        <br>
-
-        <a href="https://github.com/gsinkovskiy/skillup-shop">https://github.com/gsinkovskiy/skillup-shop</a>
-    </p>
+    </form>
 
 </body>
 
