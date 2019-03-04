@@ -1,3 +1,45 @@
-form div {
-    margin: 10px;
+div {
+    margin: 10px; /*Задание отступов между элементами*/
+}
+
+.container{
+    border: 1px solid black; /*Границы контейнеров элементов*/
+}
+
+.boxed-label{
+    border: 1px solid red; /*Границы текста меток*/
+}
+
+.colored-text{
+    color: red; /*Окрашенный текст*/
+}
+
+h1 {
+    text-align: center; /*Свойства заголовка*/
+}
+
+h2 {
+   color: green;
+}
+
+.bold-text {
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+}
+
+.italic-text{
+    /*Курсивные элементы*/
+    font-style: italic;
+    color: blue;
+}
+
+.italic-text-colored {
+    color: #C596A8;
+    font-style: italic;
+}
+
+.text-arial{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
 }
