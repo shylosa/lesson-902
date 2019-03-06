@@ -1,0 +1,27 @@
+h1 {
+    font: bold italic 16px 'Roboto';
+}
+
+p {
+    font: italic 20px 'Vemana2000';
+    text-indent: 30px;
+}
+
+.exercise-2-30 {
+    text-indent: initial;
+}
+
+table{
+    vertical-align: top;
+    border: solid 1px black;
+    border-collapse: collapse;
+    width: 400px;
+    height: 200px;
+}
+
+th, td {
+    border: solid 1px black;
+    vertical-align: top;
+}
+
+
