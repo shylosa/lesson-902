@@ -10,13 +10,12 @@ div {
     border: 1px solid red; /*Границы текста меток*/
 }
 
-/*
 .colored-text{
-    color: red; !*Окрашенный текст*!
+    color: red; /*Окрашенный текст*/
 }
 
 h1 {
-    text-align: center; !*Свойства заголовка*!
+    text-align: center; /*Свойства заголовка*/
 }
 
 h2 {
@@ -30,7 +29,7 @@ h2 {
 }
 
 .italic-text{
-    !*Курсивные элементы*!
+    /*Курсивные элементы*/
     font-style: italic;
     color: blue;
 }
@@ -82,4 +81,34 @@ h2 {
     height: 50px;
     min-width: 150px;
     min-height: 50px;
-}*/
+}
+
+.exercise-2-1{
+    color: red;
+}
+
+.exercise-2-2{
+    text-align: left;
+    color: red;
+}
+
+.exercise-2-3{
+    color: blue;
+}
+
+.exercise-2-4{
+    color: orange;
+}
+
+.exercise-2-5{
+    color: red;
+}
+
+.exercise-2-6{
+    color: green;
+}
+
+.exercise-2-7{
+    width: 300px;
+    color: black;
+}
