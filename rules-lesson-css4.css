@@ -1,27 +1,37 @@
+h1, h3 {
+    color: blue;
+    font-family: "Times New Roman";
+}
+
 h1 {
-    font: bold italic 16px 'Roboto';
+    text-align: center;
 }
 
-p {
-    font: italic 20px 'Vemana2000';
-    text-indent: 30px;
+.colored-text{
+    color: red; /*Окрашенный текст*/
+    font-weight: bold;
 }
 
-.exercise-2-30 {
-    text-indent: initial;
-}
-
-table{
-    vertical-align: top;
-    border: solid 1px black;
-    border-collapse: collapse;
+form {
     width: 400px;
-    height: 200px;
 }
 
-th, td {
-    border: solid 1px black;
-    vertical-align: top;
+div {
+    text-align: justify;
+    font: 16px 'Roboto';
 }
 
+.text-italic-colored {
+    font: italic 16px 'Roboto';
+    color: blue;
+}
 
+.elements-margin{
+    margin: 10px;
+}
+
+a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
