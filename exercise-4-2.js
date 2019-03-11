@@ -12,11 +12,8 @@
 //
 // alert(messageText);
 
-var num1, num2, result;
+let c = 15;
+let d = 2;
+let result = c + d;
 
-num1 = +prompt('Введите 1-ое число', '0');
-num2 = +prompt('Введите 2-ое число', '0');
-
-result = num1 + num2;
-
-alert('Результат сложения' + result);
+alert('c + d = ' + c + ' + ' + d + ' = ' + result);
