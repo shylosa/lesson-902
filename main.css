@@ -1,8 +1,8 @@
-table {
-  border-collapse: collapse;
+label {
+  width: 180px;
+  display: inline-block;
 }
 
-td {
-  border: 1px solid black;
-  padding: 3px 5px;
+.row{
+  margin-bottom: 10px;
 }
