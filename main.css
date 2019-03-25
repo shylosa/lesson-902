@@ -1,5 +1,5 @@
 label {
-  width: 160px;
+  width: 170px;
   display: inline-block;
 }
 
@@ -8,14 +8,17 @@ label {
 }
 
 table {
-  border: 1px solid;
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 30px;
 }
 
-tr, td {
+tr, td, th {
   border: 1px solid;
   padding: 5px 40px 5px 40px;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }

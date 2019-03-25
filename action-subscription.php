@@ -17,4 +17,9 @@ if ($errors) {
     exit();
 }
 
+$file = fopen('subscribers.txt','a');
+$line = $_POST['email'] . "\n";
+fputs($file, $line);
+fclose($file);
+
 header('Location: thanks-subscription.html');
