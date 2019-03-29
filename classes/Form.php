@@ -3,7 +3,7 @@
 class Form
 {
     /**
-     * @var array
+     * @var FormField[]
      */
     private $fields;
 
@@ -26,9 +26,21 @@ class Form
 
     public function render()
     {
-        $html = sprintf('<form method="%s" action="%s">', $this->method, $this->$this->action);
+        $html = sprintf('<form method="%s" action="%s">', $this->method, $this->action);
+        $html .= '</form>';
+
+        foreach ($this->fields as $field) {
+            $html .= $field->render();
+        }
+
         $html .= '</form>';
 
         return $html;
+
+    }
+
+    public function addField(FormField $field)
+    {
+        $this->fields[$field->getName()] = $field;
     }
 }
