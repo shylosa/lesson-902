@@ -2,29 +2,37 @@
 
 abstract class FormField
 {
-    protected $value;
-    protected $name;
 
-    public function __construct(string $name)
-    {
-        $this->name = $name;
-    }
+	/**
+	 * @var string
+	 */
+	protected $value;
 
-    abstract public function render();
+	/**
+	 * @var string
+	 */
+	protected $name;
 
-    public function getValue() : string
-    {
-        return $this->name;
-    }
+	public function __construct(string $name)
+	{
+		$this->name = $name;
+	}
 
-    public function setValue(string $value): void
-    {
-        $this->value = $value;
-    }
+	abstract public function render(): string;
 
-    public function getName() : string
-    {
-        return $this->name;
-    }
+	public function getValue(): string
+	{
+		return $this->value;
+	}
+
+	public function setValue(string $value): void
+	{
+		$this->value = $value;
+	}
+
+	public function getName(): string
+	{
+		return $this->name;
+	}
 
 }

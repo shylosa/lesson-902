@@ -1,6 +1,12 @@
 <?php
 
+
 class FormButton extends FormField
 {
-    protected
+
+	public function render(): string
+	{
+		return '<button>' . $this->name . '</button>';
+	}
+
 }
