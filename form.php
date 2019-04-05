@@ -1,27 +1,30 @@
 <?php
 /* вариант для маленьких проектов
 require_once __DIR__ . '/classes/Form.php';
-require_once __DIR__ . '/classes/FormButton.php';
 require_once __DIR__ . '/classes/FormField.php';
 require_once __DIR__ . '/classes/InputFormField.php';
-require_once __DIR__ . '/classes/PasswordFormField.php';*/
+*/
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-
-spl_autoload_register(function ($name){
-    require __DIR__  . '/classes/' . $name . '.php';
+spl_autoload_register(function ($name) {
+	require __DIR__ . '/classes/' . $name . '.php';
 });
 
 Registry::getInstance()->setFormElementClass('form-control');
 
-$form = new Form('post', 'action.php');
+$form = new Form('post', 'form.php');
 $email = new InputFormField('email', 'Email');
+$email->addValidator(new EmptyValidator());
+$email->addValidator(new EmailValidator());
 $form->addField($email);
-$form->addField(new InputFormField('firstName', 'Имя'));
+
+$firstName = new InputFormField('firstName', 'Имя');
+$firstName->addValidator(new EmptyValidator());
+$form->addField($firstName);
+
 $form->addField(new PasswordFormField('password', 'Пароль'));
 $form->addField(new PasswordFormField('passwordConfirmation', 'Подтверждение пароля'));
 $form->addField(new FormButton('Зарегистрироваться'));
+$form->processRequest();
 
 ?>
 <!DOCTYPE html>

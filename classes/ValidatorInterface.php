@@ -2,7 +2,9 @@
 
 interface ValidatorInterface
 {
-    public function validate(string $value) : bool;
 
-    public function getMessage() : string;
+	public function validate(string $value): bool;
+
+	public function getMessage(): string;
+
 }
