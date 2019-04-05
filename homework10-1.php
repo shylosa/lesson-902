@@ -9,6 +9,7 @@ $data = [3, 18, 11, 4, 7];
 
 print_r('Сумма квадратов массива = ' . ArraySumHelper::getSum2($data) . '<br>');
 
+//Создание объектов для задачи 4 и 5
 $rect = new Rectangle(10, 15);
 print_r('getSquarePerimeterSum(' .
     $rect->getA() . ", "  . $rect->getB() . ") = " . $rect->getSquarePerimeterSum());
