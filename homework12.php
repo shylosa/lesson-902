@@ -12,7 +12,7 @@ $table = 'workers';
 
 $link = mysqli_connect($host, $user, $password, $db_name);
 mysqli_query($link, "SET NAMES 'utf8'");
-
+//
 //Задача 1
 //$res = [];
 //$query = "SELECT * FROM $table WHERE id = 3";
